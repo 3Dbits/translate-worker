@@ -134,7 +134,7 @@ async function translateText(text: string, targetLang: string, apiKey: string): 
 
 ## Limitations
 
-- Maximum text length may be limited by the AI model
+- Maximum text length is limited by the AI model to 720 characters
 - Service availability depends on Cloudflare Workers and the AI model's uptime
 - Rate limiting may apply
 
