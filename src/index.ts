@@ -37,8 +37,8 @@ export default {
 
 			const translationRequest: TranslationRequest = {
 				text: requestData.text,
-				source_lang: requestData.source_lang || 'english',
-				target_lang: requestData.target_lang,
+				source_lang: requestData.source_lang?.toLowerCase() || 'en',
+				target_lang: requestData.target_lang.toLowerCase(),
 			};
 
 			if (!translationRequest.text) {
